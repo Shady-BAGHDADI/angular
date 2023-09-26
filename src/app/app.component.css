@@ -131,6 +131,7 @@ section .heading h2{
     padding: 30px 10px;
     position: relative;
 }
+
 .timeline:before{
     top: 0;
     bottom: 0;
@@ -213,6 +214,49 @@ section .heading h2{
      color: #d82c2e;
 }
 
+/* Your existing CSS styles for desktop screens */
+
+/* Media query for screens with a maximum width of 767px (typical phone size) */
+@media (max-width: 767px) {
+    .timeline:before,
+    .timeline-badge,
+    .timeline-panel:after {
+        display: none; /* Hide these elements */
+    }
+
+    /* Adjust the width and float of timeline-panel-container and timeline-panel to stack them vertically */
+    .timeline-panel-container,
+    .timeline-panel-container-inverted {
+        width: 100%; /* Set width to 100% for full width */
+        float: none; /* Remove float to stack vertically */
+        padding: 10px; /* Add padding between timeline items */
+    }
+
+    /* Adjust other styles as needed for mobile view */
+    .timeline > li {
+        margin-bottom: 20px; /* Restore margin-bottom to separate timeline items */
+        position: relative; /* Ensure relative positioning */
+    }
+
+    /* Adjust the position of timeline-badge and timeline-panel in mobile view */
+    .timeline li .timeline-badge {
+        top: 0; /* Adjust top position */
+        left: 0; /* Align to the left */
+        margin-left: 0; /* Remove margin-left */
+        position: relative; /* Ensure relative positioning */
+    }
+
+    .timeline-panel {
+        width: 100%; /* Set width to 100% for full width */
+        float: none; /* Remove float to stack vertically */
+        margin-right: 0; /* Remove margin-right */
+        position: relative; /* Ensure relative positioning */
+    }
+    .timeline-panel-container-inverted .timeline-panel {
+        float: left;
+        margin-left: 0px !important
+    }
+}
 
 /* EDUCATION */
 #education{
