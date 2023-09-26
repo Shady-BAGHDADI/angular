@@ -327,3 +327,44 @@ footer h5{
     color: #fff;
     font-weight: normal;
 }
+
+
+
+form {
+    width:90%;
+     max-width:500px;
+     margin:15px auto;
+   }
+   input, textarea {
+     width:100%;
+     margin-bottom:10px;
+     border-radius:3px;
+     border:solid 1px #ccc;
+     padding:4px 7px;
+   }
+   #eml, #tel {
+     width:49%;
+   }
+   #tel {
+     float:right;
+   }
+  button {
+     width: 120px;
+     float:right;
+     margin-left:15px;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: white;
+     background: black;
+     border: 1px solid white;
+     display: inline-block;
+     margin-top:  20px;
+     padding:4px 7px;
+     border-radius: 3px;
+     transition: all 0.3s ease-in 0s;
+   }
+   button:hover {
+     background: white;
+     color: #5e5b5b;
+     text-decoration: none;
+   } 
